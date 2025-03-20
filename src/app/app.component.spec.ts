@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'AddressBookFrontend' title`, () => {
+  it(`should have the 'address-book-frontend' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AddressBookFrontend');
+    expect(app.title).toEqual('address-book-frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, AddressBookFrontend');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, address-book-frontend');
   });
 });
